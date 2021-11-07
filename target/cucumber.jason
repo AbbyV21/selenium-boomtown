@@ -1,0 +1,90 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-11-07T01:30:23.276Z",
+        "line": 5,
+        "name": "Login as TestQA",
+        "description": "",
+        "id": "user-authentication;login-as-testqa",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4139952900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on the login page",
+            "match": {
+              "location": "com.boomtown.step_definitions.LoginStepDefinitions.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3066596800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enters valid \"TestQA\" email",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"TestQA\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.boomtown.step_definitions.LoginStepDefinitions.user_enters_valid_email(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 307623900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User enters valid \"TestQA\" password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"TestQA\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.boomtown.step_definitions.LoginStepDefinitions.user_enters_valid_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.junit.ComparisonFailure: title is as expected expected:\u003c[Boomtown: Login]\u003e but was:\u003c[My Work]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat com.boomtown.step_definitions.LoginStepDefinitions.user_should_see_the_dashboard(LoginStepDefinitions.java:46)\r\n\tat ✽.User should see the dashboard(file:///C:/Users/arte-/IdeaProjects/selenium-boomtown/src/test/resources/features/login.feature:10)\r\n",
+              "duration": 5000600,
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "User should see the dashboard",
+            "match": {
+              "location": "com.boomtown.step_definitions.LoginStepDefinitions.user_should_see_the_dashboard()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "User Authentication",
+    "description": "  As a user, I should be able to login with the valid credentials: email and password",
+    "id": "user-authentication",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/login.feature",
+    "tags": []
+  }
+]
