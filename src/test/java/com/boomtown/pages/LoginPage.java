@@ -11,6 +11,9 @@ public class LoginPage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
+    @FindBy(linkText = "Login")
+    public WebElement loginButton;
+
     @FindBy(id = "ext-element-346")
     public WebElement emailInput;
 
@@ -23,14 +26,6 @@ public class LoginPage {
     @FindBy(id = "ext-element-383")
     public WebElement loginBtn;
 
-    @FindBy(id = "ext-element-401")
-    public WebElement authenticationBox;
-
-    @FindBy(id = "ext-element-403")
-    public WebElement messageBox;
-
-    @FindBy(id = "ext-element-392")
-    public WebElement okBtn;
 
 
 }

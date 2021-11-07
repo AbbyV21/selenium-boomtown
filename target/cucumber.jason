@@ -3,29 +3,52 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-11-07T01:30:23.276Z",
+        "start_timestamp": "2021-11-07T16:41:51.758Z",
         "line": 5,
         "name": "Login as TestQA",
         "description": "",
         "id": "user-authentication;login-as-testqa",
+        "after": [
+          {
+            "result": {
+              "duration": 151661100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.boomtown.step_definitions.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 4139952900,
+              "duration": 2085849000,
               "status": "passed"
             },
             "line": 6,
-            "name": "User is on the login page",
+            "name": "User is on main Boomtown landing page",
             "match": {
-              "location": "com.boomtown.step_definitions.LoginStepDefinitions.user_is_on_the_login_page()"
+              "location": "com.boomtown.step_definitions.BoomtownSearchStepDefinitions.user_is_on_main_boomtown_landing_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 3066596800,
+              "duration": 552305700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User clicks on login button",
+            "match": {
+              "location": "com.boomtown.step_definitions.BoomtownSearchStepDefinitions.user_clicks_on_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 7302482800,
               "status": "passed"
             },
             "line": 8,
@@ -37,13 +60,13 @@
                   "offset": 18
                 }
               ],
-              "location": "com.boomtown.step_definitions.LoginStepDefinitions.user_enters_valid_email(java.lang.String)"
+              "location": "com.boomtown.step_definitions.BoomtownSearchStepDefinitions.user_enters_valid_email(java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 307623900,
+              "duration": 416445700,
               "status": "passed"
             },
             "line": 9,
@@ -55,20 +78,19 @@
                   "offset": 18
                 }
               ],
-              "location": "com.boomtown.step_definitions.LoginStepDefinitions.user_enters_valid_password(java.lang.String)"
+              "location": "com.boomtown.step_definitions.BoomtownSearchStepDefinitions.user_enters_valid_password(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "error_message": "org.junit.ComparisonFailure: title is as expected expected:\u003c[Boomtown: Login]\u003e but was:\u003c[My Work]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat com.boomtown.step_definitions.LoginStepDefinitions.user_should_see_the_dashboard(LoginStepDefinitions.java:46)\r\n\tat ✽.User should see the dashboard(file:///C:/Users/arte-/IdeaProjects/selenium-boomtown/src/test/resources/features/login.feature:10)\r\n",
-              "duration": 5000600,
-              "status": "failed"
+              "duration": 4998800,
+              "status": "passed"
             },
             "line": 10,
             "name": "User should see the dashboard",
             "match": {
-              "location": "com.boomtown.step_definitions.LoginStepDefinitions.user_should_see_the_dashboard()"
+              "location": "com.boomtown.step_definitions.BoomtownSearchStepDefinitions.user_should_see_the_dashboard()"
             },
             "keyword": "Then "
           }
@@ -85,6 +107,122 @@
     "id": "user-authentication",
     "keyword": "Feature",
     "uri": "file:src/test/resources/features/login.feature",
-    "tags": []
+    "tags": [
+      {
+        "name": "@wip",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-11-07T16:42:02.306Z",
+        "line": 11,
+        "name": "User search  verification",
+        "description": "",
+        "id": "boomtown-search-functionality;user-search--verification",
+        "after": [
+          {
+            "result": {
+              "duration": 107882400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.boomtown.step_definitions.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2445094800,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user is on Boomtown help page",
+            "match": {
+              "location": "com.boomtown.step_definitions.BoomtownSearchStepDefinitions.user_is_on_boomtown_help_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 57012600,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User types \"customer\" in the search bar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"customer\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.boomtown.step_definitions.BoomtownSearchStepDefinitions.user_types_in_the_search_bar(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4109290200,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User should see the result of the search",
+            "match": {
+              "location": "com.boomtown.step_definitions.BoomtownSearchStepDefinitions.user_should_see_the_result_of_the_search()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8001200,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User should see the number of results found including word \"customer\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"customer\"",
+                  "offset": 59
+                }
+              ],
+              "location": "com.boomtown.step_definitions.BoomtownSearchStepDefinitions.user_should_see_the_number_of_results_found_including_word(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "Boomtown Search Functionality",
+    "description": "  As a user I shuold be able to insert input in the search bar and\n  see the result",
+    "id": "boomtown-search-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/search.feature",
+    "tags": [
+      {
+        "name": "@wip",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]

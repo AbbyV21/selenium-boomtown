@@ -11,23 +11,20 @@ public class BoomtownHelpPage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    //@FindBy(id = "Login")
-    //public WebElement loginButton;
+    @FindBy(xpath = "//*[@id='hero_search']")
+    public WebElement searchBar;
+//    @FindBy(xpath = "/html/body/div[1]/main/div[1]/div/div/div/form/input")
+//    public WebElement searchBar;
 
-    @FindBy(xpath = "//*[@id=\"top-bar\"]/section/ul[2]/li/span")
-    public WebElement loginButton;
-
-    @FindBy(id = "heroContainer")
-    public WebElement title;
-
-    @FindBy(id = "hero_search")
-    public WebElement searchInput;
 
     @FindBy(id = "kb-search-title")
-    public WebElement searchTitle;
+    public WebElement searchResult;
 
-    @FindBy(xpath = "//*[@id=\"hasResults\"]/div/ul")
-    public WebElement resultsList;
+    @FindBy(id = "ext-element-91")
+    public WebElement userProfileLink;
+
+    @FindBy(xpath = "//div[@id='ext-element-121']")
+    public WebElement helpBtn;
 
 
 
