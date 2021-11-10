@@ -11,11 +11,8 @@ public class BoomtownHelpPage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(xpath = "//*[@id='hero_search']")
+    @FindBy(id="hero_search")
     public WebElement searchBar;
-//    @FindBy(xpath = "/html/body/div[1]/main/div[1]/div/div/div/form/input")
-//    public WebElement searchBar;
-
 
     @FindBy(id = "kb-search-title")
     public WebElement searchResult;

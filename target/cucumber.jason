@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-11-07T16:41:51.758Z",
+        "start_timestamp": "2021-11-10T17:10:59.430Z",
         "line": 5,
         "name": "Login as TestQA",
         "description": "",
@@ -11,7 +11,7 @@
         "after": [
           {
             "result": {
-              "duration": 151661100,
+              "duration": 97584200,
               "status": "passed"
             },
             "match": {
@@ -24,7 +24,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2085849000,
+              "duration": 3791298600,
               "status": "passed"
             },
             "line": 6,
@@ -36,7 +36,7 @@
           },
           {
             "result": {
-              "duration": 552305700,
+              "duration": 626814000,
               "status": "passed"
             },
             "line": 7,
@@ -48,7 +48,7 @@
           },
           {
             "result": {
-              "duration": 7302482800,
+              "duration": 3794807400,
               "status": "passed"
             },
             "line": 8,
@@ -66,7 +66,7 @@
           },
           {
             "result": {
-              "duration": 416445700,
+              "duration": 1061669900,
               "status": "passed"
             },
             "line": 9,
@@ -84,7 +84,7 @@
           },
           {
             "result": {
-              "duration": 4998800,
+              "duration": 4001300,
               "status": "passed"
             },
             "line": 10,
@@ -122,15 +122,15 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-11-07T16:42:02.306Z",
-        "line": 11,
+        "start_timestamp": "2021-11-10T17:11:08.850Z",
+        "line": 6,
         "name": "User search  verification",
         "description": "",
         "id": "boomtown-search-functionality;user-search--verification",
         "after": [
           {
             "result": {
-              "duration": 107882400,
+              "duration": 82017700,
               "status": "passed"
             },
             "match": {
@@ -143,10 +143,10 @@
         "steps": [
           {
             "result": {
-              "duration": 2445094800,
+              "duration": 4271467600,
               "status": "passed"
             },
-            "line": 12,
+            "line": 7,
             "name": "user is on Boomtown help page",
             "match": {
               "location": "com.boomtown.step_definitions.BoomtownSearchStepDefinitions.user_is_on_boomtown_help_page()"
@@ -155,10 +155,10 @@
           },
           {
             "result": {
-              "duration": 57012600,
+              "duration": 68118400,
               "status": "passed"
             },
-            "line": 13,
+            "line": 8,
             "name": "User types \"customer\" in the search bar",
             "match": {
               "arguments": [
@@ -173,10 +173,10 @@
           },
           {
             "result": {
-              "duration": 4109290200,
+              "duration": 3518637600,
               "status": "passed"
             },
-            "line": 14,
+            "line": 9,
             "name": "User should see the result of the search",
             "match": {
               "location": "com.boomtown.step_definitions.BoomtownSearchStepDefinitions.user_should_see_the_result_of_the_search()"
@@ -185,10 +185,10 @@
           },
           {
             "result": {
-              "duration": 8001200,
+              "duration": 7001000,
               "status": "passed"
             },
-            "line": 15,
+            "line": 10,
             "name": "User should see the number of results found including word \"customer\"",
             "match": {
               "arguments": [

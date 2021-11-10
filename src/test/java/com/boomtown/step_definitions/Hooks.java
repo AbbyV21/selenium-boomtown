@@ -9,10 +9,6 @@ import org.openqa.selenium.TakesScreenshot;
 
 public class Hooks {
 
-    public void setUpLoginScenario() {
-
-    }
-
     @After
     public void tearDownScenario(Scenario scenario) {
 

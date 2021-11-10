@@ -53,27 +53,11 @@ public class BoomtownSearchStepDefinitions {
         Assert.assertEquals("title is as expected", actualTitle, expectedTitle);
     }
 
-//    @Given("User clicks on the help link under profile picture")
-//    public void user_clicks_on_the_help_link_under_profile_picture() {
-//       helpPage.userProfileLink.click();
-//       helpPage.helpBtn.click();
-//    }
-//
-//    @Then("User should see title is {string}")
-//    public void user_should_see_title_is(String expected) throws InterruptedException {
-//        expected= "Boomtown: My Work";
-//      String actual = Driver.getDriver().getTitle();
-//
-//        Assert.assertEquals("Title as expected",expected, actual);
-//
-//    }
-
     @Given("user is on Boomtown help page")
     public void user_is_on_boomtown_help_page() {
         String url = ConfigurationReader.getProperty("BoomtowHelpUrl");
         Driver.getDriver().get(url);
     }
-
 
     @When("User types {string} in the search bar")
     public void user_types_in_the_search_bar(String customer) {
