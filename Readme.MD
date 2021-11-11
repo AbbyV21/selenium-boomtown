@@ -14,4 +14,5 @@
 -in step_definitions you will find the class with the snippets
 
 ******
+## To run locally and generate HTML reports, HTML reports should be generated under target/cucumber-html-reports then you can chose google browser to view the content of the report
 
